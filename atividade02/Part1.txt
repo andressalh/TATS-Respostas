@@ -1,0 +1,33 @@
+Andressa Leite 1634879 - Lua Ivo 1632655 - Vitor Stelmastchuk 1478516
+
+1.
+Teste de software
+Executar casos de teste fornecendo entradas e esperando resultados já prevsitos, afim de encontrar BUGS e garantir a funcionalidade
+do software.
+
+
+2.
+Teste de unidade: testar da menor parte possível do software, exemplo um método.
+Teste de integração: testar a integração do software com partes externas, testar o software com o banco de dados, arquivos externos
+e web services.
+Teste de sistema: testa o sistema inteiro, testa a pespectiva do usuário. Não precisa ter o sistema pronto.
+
+3.
+Caso de teste: Entrada e saídas esperadas. Condições de execução. Precisa configurar o contexto para o teste funcionar como desejado.
+
+4.
+Diferença entre teste manual e teste automatizado.
+Teste manual é realizado por uma pessoa e o teste automatizado é condificado por uma pessoa e realizado por uma máquina.
+
+5.
+Caixa branca: tem acesso ao código. Pode ser chamado de teste estruturado
+Caixa preta: Pode ser chamado de teste funcional, não tem acesso ao código.
+
+6. 
+Teste de regressão: Teste realizado novamente, após a mudança de algo no software.
+
+7.
+Critério de teste: Estabelce como é realizado o teste.
+Exemplos:
+Critério de teste para caixa branca: Line, Branch.
+Critério de teste para caixa preta: particionamento, classe de equivalência, análise de valor limite e tabela de decisão. 
