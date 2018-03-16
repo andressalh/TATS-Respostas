@@ -7,9 +7,9 @@ import static org.junit.Assert.*;
  *
  * @author andre
  */
-public class TesteFuncionarioValidator {
+public class TestFuncionarioValidator {
     
-    public TesteFuncionarioValidator() {
+    public TestFuncionarioValidator() {
     }
     
     
@@ -28,6 +28,13 @@ public class TesteFuncionarioValidator {
     @Test (expected = IllegalArgumentException.class)
     public void TestEmailVazio() {
        Funcionario funcionario = new Funcionario("Andressa", "", 1000.0, "DESENVOLVEDOR");
+       FuncionarioValidator.Validar(funcionario);
+    }
+    
+    @Test (expected = IllegalArgumentException.class)
+    public void TestSalarioInvalido() {
+       
+       Funcionario funcionario = new Funcionario("Andressa", "andre@g.com", -100.0, "DESENVOLVEDOR");
        FuncionarioValidator.Validar(funcionario);
     }
     
