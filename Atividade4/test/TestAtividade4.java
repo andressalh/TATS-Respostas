@@ -19,8 +19,16 @@ public class TestAtividade4 {
 
     @Test
     public void TestCargoDesenvolvedorSalarioIgualouMaiorque3000() {
-        Desconto desconto = new Desconto("Desenvolvedor", 3000.0);
-        assertEqual(desconto.getDesconto, 0.20);
+        Desconto desconto = new Desconto();       
+        assertEquals(desconto.CalcularDesconto("Desenvolvedor", 5000.0), 4000.0,0.00001);
     
     }
+    
+    @Test
+    public void TestCargoDesenvolvedorSalarioMenorque3000() {
+        Desconto desconto = new Desconto();       
+        assertEquals(desconto.CalcularDesconto("Desenvolvedor", 2900.0), 2610.0,0.00001);
+    
+    }
+
 }
