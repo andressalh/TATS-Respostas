@@ -28,7 +28,7 @@ public class Desconto {
             }
         }
         
-         if (cargo == "TESTADOR" )
+        if (cargo == "TESTADOR" )
         {
             if (salario >= 2000){
                 salarioLiquido = salario - (salario * 0.25);
@@ -38,6 +38,11 @@ public class Desconto {
             }
         }
         
+        if (cargo == "GERENTE"){
+            if (salario >= 5000.0){
+                salarioLiquido = salario - (salario * 0.30);
+            }
+        }
         
         return salarioLiquido;
     }
