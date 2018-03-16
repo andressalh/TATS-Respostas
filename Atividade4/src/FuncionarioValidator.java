@@ -16,6 +16,10 @@ class FuncionarioValidator {
             throw new IllegalArgumentException("O nome está vazio");
         }
         
+        if(funcionario.getEmail().trim().equals("")){
+            throw new IllegalArgumentException("O email está vazio");
+        }
+        
        
     }
     
