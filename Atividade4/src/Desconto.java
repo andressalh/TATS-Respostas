@@ -34,7 +34,7 @@ public class Desconto {
                 salarioLiquido = salario - (salario * 0.25);
             }
             else {
-                //salarioLiquido = salario - (salario * 0.15);
+                salarioLiquido = salario - (salario * 0.15);
             }
         }
         

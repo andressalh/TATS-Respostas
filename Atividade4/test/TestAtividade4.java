@@ -52,5 +52,12 @@ public class TestAtividade4 {
         Desconto desconto = new Desconto();       
         assertEquals(desconto.CalcularDesconto("TESTADOR", 1500.0), 1275.0,0.00001);
     }
+    
+    @Test
+    public void TestCargoGerenteSalarioMaiorouIgualque5000() {
+        Desconto desconto = new Desconto();       
+        assertEquals(desconto.CalcularDesconto("GERENTE", 5500.0), 3850.0,0.00001);
+    }
+    
 
 }
