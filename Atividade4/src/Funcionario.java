@@ -15,7 +15,7 @@ class Funcionario {
     double salarioBase;
     String cargo;
     
-    Funcionario(String nome, String email, double salarioBase, String Cargo) {
+    Funcionario(String nome, String email, double salarioBase, String cargo) {
         this.nome = nome;
         this.email = email;
         this.salarioBase = salarioBase;

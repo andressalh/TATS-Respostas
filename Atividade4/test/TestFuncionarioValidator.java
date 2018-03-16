@@ -32,15 +32,14 @@ public class TestFuncionarioValidator {
     }
     
     @Test (expected = IllegalArgumentException.class)
-    public void TestSalarioInvalido() {
-       
+    public void TestSalarioInvalido() {      
        Funcionario funcionario = new Funcionario("Andressa", "andre@g.com", -100.0, "DESENVOLVEDOR");
        FuncionarioValidator.Validar(funcionario);
     }
     
     @Test (expected = IllegalArgumentException.class)
     public void TestCargoVazio() {
-       Funcionario funcionario = new Funcionario("Andressa", "andre@g.com", 1000.0, "");
+       Funcionario funcionario = new Funcionario("Andressa", "andre@g.com", 5000.0, "");       
        FuncionarioValidator.Validar(funcionario);
     }
 }
