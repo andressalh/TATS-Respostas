@@ -21,14 +21,18 @@ public class TestAtividade4 {
     public void TestCargoDesenvolvedorSalarioIgualouMaiorque3000() {
         Desconto desconto = new Desconto();       
         assertEquals(desconto.CalcularDesconto("Desenvolvedor", 5000.0), 4000.0,0.00001);
-    
     }
     
     @Test
     public void TestCargoDesenvolvedorSalarioMenorque3000() {
         Desconto desconto = new Desconto();       
         assertEquals(desconto.CalcularDesconto("Desenvolvedor", 2900.0), 2610.0,0.00001);
+    }
     
+    @Test
+    public void TestCargoDBASalarioMaiorouIgualque2000() {
+        Desconto desconto = new Desconto();       
+        assertEquals(desconto.CalcularDesconto("DBA", 2500.0), 2000.0,0.00001);
     }
 
 }
