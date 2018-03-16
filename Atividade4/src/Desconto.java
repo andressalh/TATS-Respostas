@@ -42,6 +42,9 @@ public class Desconto {
             if (salario >= 5000.0){
                 salarioLiquido = salario - (salario * 0.30);
             }
+            else{
+                salarioLiquido = salario - (salario * 0.20);
+            }
         }
         
         return salarioLiquido;
